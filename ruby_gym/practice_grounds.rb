@@ -1,34 +1,20 @@
-strings = [
-  "here 12 plus 25",
-  "puzzle number 04 ",
-  " "
+sentences = [
+  "the dog, the cat, the zebra, the giraffe",
+  "the, the code, and the developer",
+  "then the- their"
 ]
-string = strings.sample
-pp string
+sentence = sentences.sample
 # write your program below
+ pp sentence= " " + sentence 
+ sentence= sentence.gsub(/[^a-z0-9\s]/i, '')
+  sentence
+ count_before= sentence.length
+  minus_the=sentence.gsub(" the ","")
+ amount_of_the= minus_the.length
 
-# defines number of spaces and total characters 
-total_char=string.length
+amount_of_the.class
 
-# = display w/o spaces & for counting
-count_spaces_string= string.gsub(/\s/,"")
-length_wo_spaces=count_spaces_string.length
-count_spaces= length_wo_spaces.to_i
-total_char.to_i
-#number_of_spaces= total_char - number_of_dig
-pp "Total characters:  #{total_char}"
-pp "Length w/o spaces: #{count_spaces}"
-
-#number of digits 
-count_digits_string= string.gsub(/[0-9]/,"")
-count_digits=count_digits_string.length
-count_digits_int= count_digits.to_i
-number_of_dig= total_char-count_digits_int 
-pp number_of_dig
-
-#number_letters= total_char - number_of_dig
-#number_letters= number_letters.to_i
-
-#pp "Number of letters in the string: #{number_letters}"
-pp "Number of spaces in the string: #{number_of_spaces}"
-pp "Number of digits in the string is: #{number_of_dig}"
+delta_char= count_before - amount_of_the
+ delta_char
+the_times= delta_char /3
+ pp "'the' appeared #{the_times} times"
