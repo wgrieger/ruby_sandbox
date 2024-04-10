@@ -1,30 +1,19 @@
-years = [
-  1700,
-  1940,
-  2038
-]
-year = years.sample
+secret = [
+  "I have a secret to share",
+  "Is this secure enough for my password?",
+  "we should be more clever"
+].sample
+pp secret
 # write your program below
-pp year
-#year.to_s
-#parent & step 1
-if 
-  year%4==0
-  #parent
-  then
-#step 2 
-    if year%100==0
-      then 
-      #step3
-      if year%400==0
-          then pp "#{year} is a leap year!"
-        else pp "#{year} is not a leap year."
-        end 
-    #step 2 
-      else 
-        pp "#{year} is a leap year!"  
-      end 
-#parent
-  else 
-    pp "#{year} is not a leap year."
-  end 
+pp secret.class
+
+secret.gsub("a","1")
+secret.gsub("e","2")
+secret.gsub("i","3")
+secret.gsub("o","4")
+secret.gsub("u","5")
+
+
+
+encoder= Array.new
+encoder= encrpt.chars
